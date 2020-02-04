@@ -1,0 +1,17 @@
+{% load static %}
+ <title>{% block title %}
+     BEST STORE.RU
+ {% endblock %}</title>
+{% block main %}
+    <a href="{% url "shop:product_list" %}" class="shop">BEST STORE</a>
+<h2>About us</h2>
+
+    <p>THIS IS THE BEST PLACE WHERE YOU CAN BUY ANYTHING YOU WANT</p>
+    <h2>0плата и вывоз</h2> <hЗ>Способы оплаты:</hЗ> <ul>
+<li>наличный расчет (в случае приобретения в розничных магазинах);</li>
+<li>безналичный расчет.</li>
+</ul>
+<hЗ>Способы вывоза:</hЗ> <ul>
+        <li>самовывоз;</li>
+<li>вывоз транспортом фирмы (10% наценки).</li> </ul>
+{% endblock %}
